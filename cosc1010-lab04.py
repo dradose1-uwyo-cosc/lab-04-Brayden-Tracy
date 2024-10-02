@@ -1,8 +1,8 @@
-# Your Name Here
+# Brayden Tracy
 # UWYO COSC 1010
-# Submission Date
+# 10/02/2024
 # Lab 03 
-# Lab Section: 
+# Lab Section: 15
 # Sources, people worked with, help given to: 
 # your
 # comments
@@ -99,7 +99,17 @@ min_temps = [
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
 
+sumMinTemps = 0
+sumMaxTemps = 0
+for position in range(len(min_temps)):
+    sumMinTemps += min_temps[position]
+    sumMaxTemps += max_temps[position]
+print(sumMinTemps/len(min_temps))
+print(sumMaxTemps/len(max_temps))
+
+
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
 
-
+print(max(max_temps))
+print(min(min_temps))
